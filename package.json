@@ -1,0 +1,31 @@
+{
+  "name": "mina_tpl",
+  "version": "1.0.0",
+  "description": "a light miniprogram start",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/huysh3/Mina-Pandragon.git"
+  },
+  "keywords": [
+    "mina",
+    "mp"
+  ],
+  "author": "Huysh3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huysh3/Mina-Pandragon/issues"
+  },
+  "homepage": "https://github.com/huysh3/Mina-Pandragon#readme",
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
