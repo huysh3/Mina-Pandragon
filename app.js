@@ -1,4 +1,6 @@
-import './utils/http'
+import $http from './utils/http'
+
+wx.$http = $http
 
 // app.js
 App({
@@ -7,6 +9,8 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+
+    wx.$http.get('test').then(res => console.log(res))
 
     // 登录
     wx.login({

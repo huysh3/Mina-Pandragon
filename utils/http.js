@@ -8,3 +8,5 @@ $http.interceptors.request.use((config, promise) => {
 })
 
 $http.config.baseURL = 'https://wendux.github.io/'
+
+export default $http
