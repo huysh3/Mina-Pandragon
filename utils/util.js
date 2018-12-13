@@ -14,6 +14,17 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const wxApi = (func, obj = {}) => {
+  return new Promise((resolve, reject) => {
+    wx[func]({
+      ...obj,
+      success: res => { resolve(res) },
+      fail: err => { reject(err) },
+    })
+  })
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  wxApi,
 }

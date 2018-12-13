@@ -12,7 +12,7 @@
 		"uglifyFileName": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.4.0",
+	"libVersion": "2.4.2",
 	"appid": "wxc6f52a0047c3b6bb",
 	"projectname": "mina_tpl",
 	"debugOptions": {

@@ -51,4 +51,19 @@ Page({
       hasUserInfo: true,
     })
   },
+  readDoc () {
+    wx.downloadFile({
+      // 示例 url，并非真实存在
+      url: "https://spform.wechatify.net/pdf/effect_of%20goverment's_support_20181204.pdf",
+      success: (res) => {
+        const filePath = res.tempFilePath
+        wx.openDocument({
+          filePath: filePath,
+          success: (res) => {
+            console.log('打开文档成功')
+          },
+        })
+      },
+    })
+  },
 })

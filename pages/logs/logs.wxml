@@ -1,5 +1,11 @@
 <!--logs.wxml-->
 <view class="container log-list">
+  <navigator
+    url="/pages/index/index"
+    open-type="navigate"
+    hover-class="none">
+    To index
+  </navigator>
   <block wx:for="{{logs}}" wx:for-item="log">
     <text class="log-item">{{index + 1}}. {{log}}</text>
   </block>
